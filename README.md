@@ -13,7 +13,8 @@ Foundry consists of:
 
 https://book.getfoundry.sh/
 
-## Usage
+## Deployed Graph API 
+https://api.studio.thegraph.com/query/97997/student-graph/version/latest
 
 ### Build
 
