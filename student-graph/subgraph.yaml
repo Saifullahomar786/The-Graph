@@ -1,0 +1,26 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: StudentInfo
+    network: holesky
+    source:
+      address: "0x74CEBAd009a7bF1BE5A801113adE484b346a5D8A"
+      abi: StudentInfo
+      startBlock: 2915045
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - StudentAdd
+      abis:
+        - name: StudentInfo
+          file: ./abis/StudentInfo.json
+      eventHandlers:
+        - event: StudentAdd((string,address,uint256))
+          handler: handleStudentAdd
+      file: ./src/student-info.ts

@@ -1,0 +1,7 @@
+{
+  "transactions": [
+    {
+      "rpc": "wss://ethereum-holesky-rpc.publicnode.com"
+    }
+  ]
+}
